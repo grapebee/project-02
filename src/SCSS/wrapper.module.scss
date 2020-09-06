@@ -1,0 +1,46 @@
+.wrapper {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 30em auto;
+  grid-template-areas:
+          "searchbar topbar"
+          "sidebar messages"
+          "sidebar downbar";
+  grid-template-rows: 50px 1fr auto;
+  grid-gap: 0px 1px;
+  background: black;
+}
+.sideBar{
+  grid-area: sidebar;
+  max-height: 94.9vh;
+  background: #17212b;
+  overflow-y: scroll;
+}
+.sideBar::-webkit-scrollbar {
+  display: none;
+}
+
+.sideBar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.Menu{
+  grid-area: searchbar;
+  background: #17212b;
+}
+
+.Header{
+  grid-area: topbar;
+  background: #17212b;
+}
+
+.Container{
+  grid-area: messages;
+  background: #0e1621;
+}
+
+.Footer{
+  grid-area: downbar;
+  background: #17212b;
+}
