@@ -21,7 +21,7 @@ const Footer = (props) => {
         <div className={scss.wrapper}>
             <Form.Control
                 as="textarea"
-                //ref={textareaRef}
+                ref={textareaRef}
                 className={scss.textarea}
                 placeholder="Write a message..."
                 rows={1}
