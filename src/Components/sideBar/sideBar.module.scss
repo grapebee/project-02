@@ -1,0 +1,29 @@
+.UserNames {
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: 'Cabin', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  position: relative;
+  vertical-align: middle;
+  width: auto;
+  text-transform: uppercase; ;
+  text-decoration: none;
+}
+
+.layer a{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.UserNamesH {
+  //border: 1px solid #17212b;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid white;
+    background: #202b36;
+    box-shadow: inset 0 0 10px rgba(white, 0.5), 0 0 10px rgba(white, 0.3);
+  }
+}
